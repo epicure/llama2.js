@@ -21,6 +21,13 @@ A pure JavaScript port of Karpathy's [llama2.c](https://github.com/karpathy/llam
     open http://localhost:8080/run.html
     ```
 
+## How to run with docker
+
+   ```bash
+    docker build -t llama2.js .
+    docker run -it --rm llama2.js
+    ```
+
 ## Performance
 
 Tokens/sec measurement on Apple M1
