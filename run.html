@@ -22,9 +22,9 @@
             <textarea id="prompt" type="text" value="" cols="80" rows="1" placeholder="One day"></textarea>
         </div>
         <select id="model">
-            <option value="stories15m">stories15m</option>
-            <option value="stories42m">stories42m</option>
-            <option value="stories110m">stories110m</option>
+            <option value="stories15M">stories15M</option>
+            <option value="stories42M">stories42M</option>
+            <option value="stories110M">stories110M</option>
         </select>
 
         <label>top-p</label><input id="top-p" type="number" value="1.0" step="0.1">
@@ -517,7 +517,7 @@
     }
 
     async function init() {
-        await load_model('stories15m.bin');
+        await load_model('stories15M.bin');
         await load_vocab('tokenizer.bin');
 
         generate();
